@@ -1,4 +1,4 @@
-# Reseller API for WP Rocket reseller program
+# API for WP Rocket Reseller Program
 
 WP Rocket is a WordPress premium caching plugin that provides both lightning speed for your website and easy set up for you.
 
