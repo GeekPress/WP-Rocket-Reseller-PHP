@@ -8,21 +8,16 @@ Basic usage:
 
 1. Configure your reseller account with your access credentials
 
-`
-<?php
+```php
 $wp_rocket = new WP_Rocket_Reseller('YOUR_APP_EMAIL', 'YOUR_API_KEY');
-?>
-`
+```
 
 2. Make requests to the API
 
-`
-<?php
+```php
 $wp_rocket = new WP_Rocket_Reseller('YOUR_APP_EMAIL', 'YOUR_API_KEY');
 $orders = $wp_rocket->getOrders();
-var_dump($orders);
-?>
-`
+```
 
 ## Changelog
 
