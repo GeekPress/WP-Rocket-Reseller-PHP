@@ -6,13 +6,13 @@ This library provides connectivity with the WP Rocket Reseller API
 
 Basic usage:
 
-1. Configure your reseller account with your access credentials
+1- Configure your reseller account with your access credentials
 
 ```php
 $wp_rocket = new WP_Rocket_Reseller('YOUR_APP_EMAIL', 'YOUR_API_KEY');
 ```
 
-2. Make requests to the API
+2- Make requests to the API
 
 ```php
 $wp_rocket = new WP_Rocket_Reseller('YOUR_APP_EMAIL', 'YOUR_API_KEY');

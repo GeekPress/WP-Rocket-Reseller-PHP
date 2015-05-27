@@ -66,15 +66,17 @@ class WP_Rocket_Reseller
      *
      * @param  string $email       The email of the customer
      * @param  string $first_name  The first name of the customer
-     * #param  array  $last_name   The last name of the customer
+     * @param  string $last_name   The last name of the customer
+     * @param  string $licence     The licence to give to the customer (perso, busineess, pro)
      * @return object
      **/
-    public function createOrder($email, $first_name, $last_name)
+    public function createOrder($email, $first_name, $last_name, $licence = 'perso')
     {
         $data = array();
 		$data['email']      = $email;
 		$data['first_name'] = $first_name;
 		$data['last_name']  = $last_name;
+		$data['licence']    = $licence;
 
         $path = 'orders';
 
