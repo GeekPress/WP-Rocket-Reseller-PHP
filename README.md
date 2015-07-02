@@ -21,6 +21,10 @@ $orders = $wp_rocket->getOrders();
 
 ## Changelog
 
+### 1.1 - 02 July 2015
+
+* Add `force` parameter which is set to `false` by default on the `createOrder` method
+
 ### 1.0
 
 * Initial release

@@ -67,17 +67,24 @@ class WP_Rocket_Reseller
      * @param  string $email       The email of the customer
      * @param  string $first_name  The first name of the customer
      * @param  string $last_name   The last name of the customer
-     * @param  string $licence     The licence to give to the customer (perso, busineess, pro)
+     * @param  string $licence     The licence to give to the customer
+     							   Defaults to perso
+	 							   By default are available the licences: perso, business, pro, renew
+     * @param  string $force       Force the new licence to be combined with current one
+     							   Defaults to false
+	 							   For example, if the customer has a business licence 
+	 							   and you want to offer him a new personal licence (3+1 = 4 websites)
      * @return object
      **/
-    public function createOrder($email, $first_name, $last_name, $licence = 'perso')
+    public function createOrder($email, $first_name, $last_name, $licence = 'perso', $force = false)
     {
         $data = array();
 		$data['email']      = $email;
 		$data['first_name'] = $first_name;
 		$data['last_name']  = $last_name;
 		$data['licence']    = $licence;
-
+		$data['force']      = $force;
+		
         $path = 'orders';
 
         return $this->httpCall(
